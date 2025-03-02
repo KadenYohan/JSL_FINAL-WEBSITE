@@ -136,6 +136,10 @@
 }
 
 /*SECTION 3 : CATALOGUE*/
+.textcolorer {
+    color: #15623c;
+    text-align: center;
+}
 .catalog-container {
     width: 90%;
     margin: auto;
