@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*HEADER*/
+.navbar .navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+    /*checks if the body doesnt have homepage class
+    which only exists at the homepage html*/
+body:not(.homepage) .navbar {
+    background-color: #15623c !important;
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+}
+
+body:not(.homepage) .navbar .navbar-nav .dropdown-menu {
+    background-color: #15623c !important;
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    z-index: 1051;
+}
+
+body:not(.homepage) .navbar .navbar-nav .dropdown-menu .dropdown-item:visited {
+    color: white !important;
+}
+
+
+
+
+/*FOOTER*/
+.footer {
+    background-color: #15623c;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+    color: white;
+}
+
+.footer .footer-container .f-c1 img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-container h1 {
+    font-size: 30px;
+}
+
+.footer .footer-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-container a:hover {
+    color: #b2dfc9;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-container .col {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.footer-container .col-md-auto,
+.footer-container .col-lg-2 {
+    max-width: 300px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-divider {
+    border: 1px solid #3c7b56;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*CART AND OTHER THING FEATURE*/
+.panel {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 40%;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 10px black;
+    padding: 20px;
+    transition: right 0.5s ease-in-out;
+    border-radius: 12px 0 0 12px;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.panel.active {
+    right: 0;
+}
+
+.close-panel {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-content {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 20px;
+    border: 2px dashed #3c7b56;
+    border-radius: 10px;
+    background: rgba(178, 223, 201, 0.2);
+}
+
+.cart-content p {
+    margin: 10px 0;
+}
+
+.cart-content .cart-icon {
+    font-size: 50px;
+    color: #3c7b56;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(178, 223, 201, 0.2);
+    border-radius: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #3c7b56;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+    /*Style the text inside the input*/
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #666;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+.contact-form button {
+    background: #3c7b56;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    font-size: 16px;
+}

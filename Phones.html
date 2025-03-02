@@ -1,0 +1,351 @@
+<html>
+    <head>
+        <title>JSL PHONES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--DO NOT REMOVE OR EDIT SCRIPTS, BOOTSTRAP4 IS USED-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <!--DO NOT REMOVE INTERSITE.css-->
+        <link rel=  "stylesheet" href="./CSS/INTERSITE.css">
+        <!--PUT YOUR CSS FILES HERE-->
+        <link rel="stylesheet" href="./CSS/Phones.css">
+    </head>
+    <body>
+        <!--HEADER AND NAVIGATION BAR-->
+        <!--DO NOT EDIT-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid sticky-top">
+            <a class="navbar-brand" href="Homepage.html">
+                <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown  active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Phones
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Phones.html">All Phones</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Phones-Androids.html">Androids</a>
+                            <a class="dropdown-item" href="Phones-Apple.html">Apple</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Appliances.html">Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('contactPanel')">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('cartPanel')">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Search.html">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- PANELS: CART & CONTACT -->
+        <div class="panel" id="cartPanel">
+            <span class="close-panel" onclick="togglePanel('cartPanel')">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div class="cart-content">
+                <div class="cart-icon">🛒</div>
+                <p>Your cart is currently empty.</p>
+                <p>Browse our products and add items to your cart.</p>
+            </div>
+        </div>
+
+        <div class="panel" id="contactPanel">
+            <span class="close-panel" onclick="togglePanel('contactPanel')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Fill out the form below and we’ll get back to you as soon as possible.</p>
+            <p><strong>Landline:</strong> 070-8864-0225</p>
+            <p><strong>Email:</strong> JSLCO@gmail.com</p>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--SECTION 1 : CATEGORY -->
+        <!--Top Navbar-->
+        <div id="top-navbar">
+            <div class="navbar-icons">
+                <img src="./Media/PhoneMedia/icon (1).png" alt="all" class="navbar-icon">
+                <img src="./Media/PhoneMedia/icon (2).png" alt="apple" class="navbar-icon">
+                <img src="./Media/PhoneMedia/icon (3).png" alt="android" class="navbar-icon">
+            </div>
+        </div>
+
+        <!--Bottom Navbar-->
+        <div id="bottom-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="d-flex justify-content-center w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text-links active" href="./Phones.html">ALL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text-links" href="./Phones-Apple.html">APPLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text-links" href="./Phones-Androids.html">ANDROID</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <!--SECTION 2 : APPLE-->
+        <div class="hero-container">
+            <img src="./Media/PhoneMedia/appleProds.png" alt="Header Image">
+            <div class="hero-text">
+                SHOP APPLE
+            </div>
+        </div>
+        <br />
+        <div class="catalog-container">
+            <ul class="phone-base-product">
+                <li>
+                    <img src="./Media/PhoneMedia/ph_apple_1.jpg" alt="Apple iPhone 16 Pro Desert Titanium 128GB MYNF3ZP/A">
+                    <div class="product-title">Apple iPhone 16 Pro Desert Titanium 128GB MYNF3ZP/A</div>
+                    <div class="product-old-price">₱76,990</div>
+                    <div class="product-price">₱69,990</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_apple_2.jpg" alt="Apple iPad (10th Generation) Wi-Fi">
+                    <div class="product-title">Apple iPad (10th Generation) Wi-Fi</div>
+                    <br />
+                    <div class="product-old-price">₱26,490</div>
+                    <div class="product-price">₱21,990</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_apple_3.jpg" alt="Watch Series 9 GPS + Cellular Stainless Steel">
+                    <div class="product-title">Watch Series 9 GPS + Cellular Stainless Steel</div>
+                    <br />
+                    <div class="product-old-price">₱52,990</div>
+                    <div class="product-price">₱42,990</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_apple_4.jpg" alt="iPhone 16 Plus">
+                    <div class="product-title">iPhone 16 Plus</div>
+                    <br />
+                    <br />
+                    <div class="product-old-price">₱66,990</div>
+                    <div class="product-price">₱61,890</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/apple_viewmore.png" alt="View More">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="product-title">View more Apple Products</div>
+                    <br />
+                    <a href="./Phones-Apple.html" class="add-to-cart">To Apple Products Page</a>
+                </li>
+            </ul>
+        </div>
+        <!--SECTION 3 : ANDROID-->
+        <div class="hero-container">
+            <img src="./Media/PhoneMedia/androidProds.png" alt="Header Image">
+            <div class="hero-text">
+                SHOP ANDROIDS
+            </div>
+        </div>
+        <br />
+        <div class="catalog-container">
+            <ul class="phone-base-product">
+                <li>
+                    <img src="./Media/PhoneMedia/ph_android_1.jpg" alt="Samsung Galaxy A14 5G 6GB + 128GB">
+                    <div class="product-title">Samsung Galaxy A14 5G 6GB + 128GB</div>
+                    <br />
+                    <div class="product-old-price">₱12,990</div>
+                    <div class="product-price">₱12,920</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_android_2.jpg" alt="Xiaomi REDMI A3 3GB+64GB Star Blue">
+                    <div class="product-title">Xiaomi REDMI A3 3GB+64GB Star Blue</div>
+                    <br />
+                    <div class="product-old-price">₱4,000</div>
+                    <div class="product-price">₱3,399</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_android_3.jpg" alt="Samsung Galaxy S24 Ultra 5G Titanium Gray 12+256GB SM-S928BZTCPHL">
+                    <div class="product-title">Samsung Galaxy S24 Ultra 5G Titanium Gray 12+256GB SM-S928BZTCPHL</div>
+                    <div class="product-old-price">₱84,990</div>
+                    <div class="product-price">₱71,990</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/ph_android_4.png" alt="Samsung TABA9WIFI">
+                    <div class="product-title">Samsung TABA9WIFI TV</div>
+                    <br />
+                    <br />
+                    <div class="product-old-price">₱9,650</div>
+                    <div class="product-price">₱8,990</div>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </li>
+                <li>
+                    <img src="./Media/PhoneMedia/android_viewmore.png" alt="View more">
+                    <br />
+                    <br />
+                    <br />
+                    <div class="product-title">View more Android Products</div>
+                    <br />
+                    <a href="./Phones-Androids.html" class="add-to-cart">To Android Products Page</a>
+                </li>
+            </ul>
+        </div>
+        <!--SECTION 4 : CASHALO-->
+        <div id="section2" class="duoSection">
+            <div class="row custom-row align-items-center">
+                <!-- TEXT -->
+                <div class="col-md-6 text-section text-center">
+                    <h2 class="title">Shop Now , Pay Later : Installment through Cashalo!</h2>
+                </div>
+                <!-- BODY -->
+                <div class="col-md-6 body-section text-center cashalo">
+                    <img src="./Media/ApplianceMedia/cashalo.png">
+                    <table border="1">
+                        <tr>
+                            <th colspan="1">Product</th>
+                            <th colspan="1">Requirements</th>
+                            <th colspan="1">Government ID</th>
+                            <th colspan="1">Proof of Income</th>
+                        </tr>
+                        <tr>
+                            <td>Laptop</td>
+                            <td rowspan="4">Valid IDs and Proof of Income</td>
+                            <td rowspan="8">SSS ID
+                                <br>Driver's License
+                                <br>UMID
+                                <br>PAGIBIG
+                                <br>Passport
+                                <br>Postal
+                                <br>TIN ID
+                                <br>PhilHealth ID
+                            </td>
+                            <td rowspan="6">Company ID
+                                <br>Payslip
+                                <br>DTI Permit (Business)
+                                <br>Mayor's Permit (Business)
+                                <br>Bank Statement
+                                <br>Remittance Slip
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Phones</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Accessories</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+        <!--FOODTER-->
+        <!--DO NOT EDIT-->
+        <footer class="footer">
+            <div class="row footer-container">
+                <div class="col f-c1">
+                    <a class="navbar-brand" href="Homepage.html">
+                        <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+                    </a>
+                    <nav class="footer-nav">
+                        <a href="Homepage.html">Home</a>
+                        <a href="Phones.html">Phones</a>
+                        <a href="Appliances.html">Appliances</a>
+                        <a href="Accessories.html">Accessories</a>
+                        <a href="About-us.html">About Us</a>
+                    </nav>
+                    <hr class="footer-divider">
+                    <p><strong>Company :</strong> JLS GADGETS AND ACCESSORIES </p>
+                    <p><strong>Main Store :</strong> SHAR APPLIANCES</p>
+                    <p><strong>CEO :</strong> JOSEPHINE SABAYO | <strong>TEL :</strong> 070-8864-0225</a> </p>
+                    <p><strong>Personal info manager :</strong> Arnulfo Sabayo III (JSLCO@gmail.com</a>) </p>
+                    <p>Copyright © JLS GADGETS AND ACCESSORIES. All rights reserved.</p>
+                </div>
+                <div class="col-md-auto">
+                    <br/>
+                        <h1>
+                        <b>CONTACT US</b>
+                    </h1>
+                    <ul>
+                        <li><p>JLS GADGETS AND ACCESSORIES</p></li>
+                        <li><strong>Landline:</strong> <b><u>070-8864-0225</u></b></li>
+                        <li><p><strong>Address:</strong> P2CQ+PM9, General Luis, Novaliches, Quezon City, Metro Manila, Philippines</p></li>
+                        <li><p><strong>Email:</strong> JSLCO@gmail.com</p></li>
+                        <li><p><strong>Developers:</strong> ARNULFO LUSANTA SABAYO III, RIEL ANDREW LEDESMA, ALJERRALD SANTOS, & GABRIEL AZE MEDINA </p></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2">
+                    <br/>
+                    <h1>
+                        <b>CONNECT</b>
+                    </h1>
+                    <ul>
+                        <li><a href="https://web.facebook.com/JSLCellphoneAccessories">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/jsl.ca/">Instagram</a></li>
+                        <li><a href="#">Lazada</a></li>
+                        <li><a href="#">Shopee</a></li>
+                    </ul>
+                </div>
+              </div>
+        </footer>
+        <script>
+            /*Script for CART AND CONTACT PANEL*/
+            function togglePanel(panelId) {
+                document.getElementById(panelId).classList.toggle('active');
+            }
+
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Message sent successfully! We will get back to you soon.");
+                this.reset();
+            }); 
+        </script>
+    </body>
+</html>

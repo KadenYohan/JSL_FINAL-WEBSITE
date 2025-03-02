@@ -1,0 +1,307 @@
+<html>
+    <head>
+        <title>JSL ABOUT US</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--DO NOT REMOVE OR EDIT SCRIPTS, BOOTSTRAP4 IS USED-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <!--DO NOT REMOVE INTERSITE.css-->
+        <link rel=  "stylesheet" href="./CSS/INTERSITE.css">
+        <!--PUT YOUR CSS FILES HERE-->
+        <link rel="stylesheet" href="./CSS/About-us.css">
+    </head>
+    <body>
+        <!--HEADER AND NAVIGATION BAR-->
+        <!--DO NOT EDIT-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid sticky-top">
+            <a class="navbar-brand" href="Homepage.html">
+                <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Phones
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Phones.html">All Phones</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Phones-Androids.html">Androids</a>
+                            <a class="dropdown-item" href="Phones-Apple.html">Apple</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Appliances.html">Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('contactPanel')">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('cartPanel')">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Search.html">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- PANELS: CART & CONTACT -->
+        <div class="panel" id="cartPanel">
+            <span class="close-panel" onclick="togglePanel('cartPanel')">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div class="cart-content">
+                <div class="cart-icon">🛒</div>
+                <p>Your cart is currently empty.</p>
+                <p>Browse our products and add items to your cart.</p>
+            </div>
+        </div>
+
+        <div class="panel" id="contactPanel">
+            <span class="close-panel" onclick="togglePanel('contactPanel')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Fill out the form below and we’ll get back to you as soon as possible.</p>
+            <p><strong>Landline:</strong> 070-8864-0225</p>
+            <p><strong>Email:</strong> JSLCO@gmail.com</p>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--SECTION 1 : REGISTERED AND A CERTIFIED DISTRIBUTOR -->
+        <div class="hero-container">
+            <img src="./Media/AboutUsMedia/AboutUsHeader.png" alt="Header Image">
+            <div class="hero-text">
+                REGISTERED AND A <br> CERTIFIED DISTRIBUTOR
+            </div>
+        </div>
+        <!--SECTION 2 : INFORMATION-->
+        <div id="section2" class="duoSection">
+            <div class="row custom-row align-items-center">
+                <!-- TEXT -->
+                <div class="col-md-6 text-section text-center">
+                    <h2 class="title">Your Trusted and Certified Tech Partner</h2>
+                </div>
+                <!-- BODY -->
+                <div class="col-md-6 body-section text-center">
+                    <p>At JSL, we take pride in being a registered and certified distributor of top global brands. From leading phone brands like <span style="color:  #15623c; font-weight: bold;">Apple, Samsung, Honor, Xiaomi, and more</span> to reliable home appliances from Tough Mama, Haier, Fujidenzo, and beyond, we guarantee authenticity, quality, and warranty-backed products. Shop with confidence, knowing you're getting genuine, high-quality devices and appliances from an official distributor committed to excellence.</p>
+                </div>
+            </div>
+        </div>
+        <!--SECTION 3 : INFORMATION-->
+        <div class="hero-container">
+            <img src="./Media/AboutUsMedia/trustedPartner.png" alt="Awarding Image">
+            <div class="hero-text">
+                Award-Winning Partnership & Excellence
+            </div>
+        </div>
+        <!--order-1 appears first on small screens order-md-1 appears first on large screens-->
+        <div id="section2" class="duoSection">
+            <div class="row custom-row align-items-center">
+                <!-- TEXT -->
+                <div class="col-md-6 body-section text-center order-2 order-md-1">
+                    <p>We take pride in being one of the best partners of top brands. Our dedication to providing trusted products and excellent service has earned us the <span style="color:  #15623c; font-weight: bold;">2024 Outstanding Partnership Award from HONOR 2024</span>—for the third consecutive time. This recognition reflects our commitment to delivering genuine and reliable devices while strengthening our partnerships with the world’s leading tech and appliance brands.</p>
+                </div>
+                <!-- BODY -->
+                <div class="col-md-6 text-section text-center order-1 order-md-2">
+                    <h2 class="title">Trusted Partnerships and Excellence in Service</h2>
+                </div>
+            </div>
+        </div>        
+        <!--SECTION 4 : STORY OF JSL BUSINESS-->
+        <div class="hero-container">
+            <img src="./Media/AboutUsMedia/history.png" alt="Image of Main Shop">
+            <div class="hero-text">
+                Built on Trust, Driven by Excellence
+            </div>
+        </div>
+
+        <div id="timeline">
+            <div class="era" id="era-1990s">
+                <h2>1990s: Humble Beginnings</h2>
+                <p>
+                    Our journey began in the late 1990s, when Josephine Sabayo started a humble business selling candies, 
+                    snacks, and everyday goods from a small wooden stall in Quezon City. At that time, the streets were 
+                    lined with small vendors, each striving to make a living by serving their local communities. What set 
+                    Josephine apart was her keen sense of customer service and determination to grow despite the limited 
+                    resources available.
+                </p>
+                <p>
+                    As the years went by, the world around us changed, and so did our business. By the early 2000s, we 
+                    saw an increasing demand for electronic accessories such as chargers, earphones, and phone cases. 
+                    Recognizing this opportunity, we expanded our product lineup to include affordable yet high-quality 
+                    accessories, ensuring that our customers could protect and enhance their mobile devices without spending too much.
+                </p>
+            </div>
+        
+            <div class="era" id="era-2000s">
+                <h2>2000s: Embracing Mobile Technology</h2>
+                <img src="./Media/AboutUsMedia/tumblr_96adec2b758ff6614038a00508574d82_a571b9bf_500.png" alt="Nokia Phone 2000s" class="float-left">
+                <p>
+                    By the late 2000s, the rise of mobile phones revolutionized the way people communicated. The demand 
+                    for loading services increased significantly as prepaid mobile plans became the norm in the Philippines. 
+                    Understanding this shift, we started offering prepaid load for major networks, ensuring that our 
+                    customers could stay connected at all times.
+                </p>
+                <p>
+                    Not stopping there, we introduced phone repair services, fixing common issues such as broken screens, 
+                    water damage, and battery problems. Our small shop quickly became a trusted spot for mobile phone users 
+                    looking for affordable and reliable repair solutions. This was also the period when we expanded into 
+                    selling mobile phones, carrying a wide range of models from popular brands like BlackBerry, Cherry Mobile, 
+                    Star Mobile, Nokia, Sony Ericsson, and Motorola. These brands were at the forefront of mobile innovation, 
+                    and by making them available to our customers, we played a role in the mobile revolution happening in the country.
+                </p>
+            </div>
+            
+            <div class="era" id="era-2010s">
+                <h2>2010s: Digital Transformation & Expansion</h2>
+                <img src="./Media/AboutUsMedia/Samsung_Galaxy_Nexus_Render.png" alt="Samsung Phone 2010s" class="float-right">
+                <p>
+                    As we entered the late 2010s, the mobile phone industry underwent another major shift. Touchscreen 
+                    smartphones replaced traditional keypads, and brands like Apple, Samsung, Honor, and Xiaomi dominated 
+                    the market. Recognizing the importance of staying updated, we embraced this transformation by retailing 
+                    brand-new smartphones, ensuring that our customers had access to the latest models at competitive prices.
+                </p>
+                <p>
+                    During this time, we also expanded beyond mobile gadgets and ventured into home appliances, offering 
+                    trusted brands like Tough Mama, Haier, and Fujidenzo. Our goal was to cater to the evolving needs of 
+                    Filipino households, providing them with reliable products that improved their daily lives. Whether it 
+                    was a new smartphone for communication, a trusted brand of kitchen appliances, or accessories that enhanced 
+                    gadget performance, we ensured that we remained a one-stop-shop for technology and home essentials.
+                </p>
+            </div>            
+        
+            <div class="era" id="era-present">
+                <h2>Present Day: A Trusted & Certified Distributor</h2>
+                <p>
+                    What started as a small stall in Quezon City has now evolved into a registered and certified distributor, 
+                    serving a wider customer base while staying true to our community-driven values. Today, JSL Accessories 
+                    and Gadgets continues to grow, bringing top-tier products, exceptional service, and innovative solutions 
+                    to our customers.
+                </p>
+                <p>
+                    But our journey does not end here. We remain committed to adapting to technological advancements, exploring 
+                    new product categories, and improving our services to meet the changing demands of modern consumers. 
+                    From the humble beginnings of selling candies to becoming a trusted distributor of gadgets and electronics, 
+                    our story is one of growth, resilience, and a relentless commitment to serving our customers.
+                </p>
+                <p>
+                    As we move forward, we remain guided by the same core principles that have defined us from the start—trust, 
+                    quality, and community. With every new product and every satisfied customer, we continue to build on the 
+                    legacy that began decades ago, ensuring that JSL Accessories and Gadgets remains a name that Filipinos can rely on.
+                </p>
+            </div>
+        </div>
+        <!--SECTION 5 : WHERE TO FIND-->
+        <!--order-1 appears first on small screens order-md-1 appears first on large screens-->
+        <div id="section2" class="duoSection">
+            <div class="row custom-row align-items-center">
+                <!-- TEXT -->
+                <div class="col-md-6 body-section text-center order-2 order-md-1">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.365494006146!2d121.03666707472806!3d14.721797585779061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0fead533611%3A0xe48177b2637f77a8!2sSHAR%20CELLPHONE%20AND%20APPLIANCE%20CENTRE!5e1!3m2!1sen!2sph!4v1740903434690!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- BODY -->
+                <div class="col-md-6 text-section text-center order-1 order-md-2">
+                    <h2 class="title">Find Us at the Heart of It All – Visit Our Main Store Today!</h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!--FOODTER-->
+        <!--DO NOT EDIT-->
+        <footer class="footer">
+            <div class="row footer-container">
+                <div class="col f-c1">
+                    <a class="navbar-brand" href="Homepage.html">
+                        <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+                    </a>
+                    <nav class="footer-nav">
+                        <a href="Homepage.html">Home</a>
+                        <a href="Phones.html">Phones</a>
+                        <a href="Appliances.html">Appliances</a>
+                        <a href="Accessories.html">Accessories</a>
+                        <a href="About-us.html">About Us</a>
+                    </nav>
+                    <hr class="footer-divider">
+                    <p><strong>Company :</strong> JLS GADGETS AND ACCESSORIES </p>
+                    <p><strong>Main Store :</strong> SHAR APPLIANCES</p>
+                    <p><strong>CEO :</strong> JOSEPHINE SABAYO | <strong>TEL :</strong> 070-8864-0225</a> </p>
+                    <p><strong>Personal info manager :</strong> Arnulfo Sabayo III (JSLCO@gmail.com</a>) </p>
+                    <p>Copyright © JLS GADGETS AND ACCESSORIES. All rights reserved.</p>
+                </div>
+                <div class="col-md-auto">
+                    <br/>
+                        <h1>
+                        <b>CONTACT US</b>
+                    </h1>
+                    <ul>
+                        <li><p>JLS GADGETS AND ACCESSORIES</p></li>
+                        <li><strong>Landline:</strong> <b><u>070-8864-0225</u></b></li>
+                        <li><p><strong>Address:</strong> P2CQ+PM9, General Luis, Novaliches, Quezon City, Metro Manila, Philippines</p></li>
+                        <li><p><strong>Email:</strong> JSLCO@gmail.com</p></li>
+                        <li><p><strong>Developers:</strong> ARNULFO LUSANTA SABAYO III, RIEL ANDREW LEDESMA, ALJERRALD SANTOS, & GABRIEL AZE MEDINA </p></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2">
+                    <br/>
+                    <h1>
+                        <b>CONNECT</b>
+                    </h1>
+                    <ul>
+                        <li><a href="https://web.facebook.com/JSLCellphoneAccessories">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/jsl.ca/">Instagram</a></li>
+                        <li><a href="#">Lazada</a></li>
+                        <li><a href="#">Shopee</a></li>
+                    </ul>
+                </div>
+              </div>
+        </footer>
+        <script>
+            /*Script for CART AND CONTACT PANEL*/
+            function togglePanel(panelId) {
+                document.getElementById(panelId).classList.toggle('active');
+            }
+
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Message sent successfully! We will get back to you soon.");
+                this.reset();
+            }); 
+        </script>
+    </body>
+</html>

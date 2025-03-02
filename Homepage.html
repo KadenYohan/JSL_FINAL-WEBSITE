@@ -1,0 +1,507 @@
+<html>
+    <head>
+        <title>JSL ACCESSORIES AND GADGETS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--DO NOT REMOVE OR EDIT SCRIPTS, BOOTSTRAP4 IS USED-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <!--DO NOT REMOVE INTERSITE.css-->
+        <link rel=  "stylesheet" href="./CSS/INTERSITE.css">
+        <!--PUT YOUR CSS FILES HERE-->
+        <link rel="stylesheet" href="./CSS/Homepage.css">
+    </head>
+    <body class="homepage">
+        <!--HEADER AND NAVIGATION BAR-->
+        <!--DO NOT EDIT-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid sticky-top">
+            <a class="navbar-brand" href="Homepage.html">
+                <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./Homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Phones
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Phones.html">All Phones</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Phones-Androids.html">Androids</a>
+                            <a class="dropdown-item" href="Phones-Apple.html">Apple</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Appliances.html">Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('contactPanel')">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="togglePanel('cartPanel')">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Search.html">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- PANELS: CART & CONTACT -->
+        <!--&times; is just x-->
+        <div class="panel" id="cartPanel">
+            <span class="close-panel" onclick="togglePanel('cartPanel')">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div class="cart-content">
+                <div class="cart-icon">🛒</div>
+                <p>Your cart is currently empty.</p>
+                <p>Browse our products and add items to your cart.</p>
+            </div>
+        </div>
+
+        <div class="panel" id="contactPanel">
+            <span class="close-panel" onclick="togglePanel('contactPanel')">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Fill out the form below and we’ll get back to you as soon as possible.</p>
+            <p><strong>Landline:</strong> 070-8864-0225</p>
+            <p><strong>Email:</strong> JSLCO@gmail.com</p>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--BODY CONTENT NAME: Carousel of 3 media, 1 vide and 3 images-->
+<!--PUT COMMENTS ON YOUR CODE, LABEL EACH PLEASE AND ON YOUR CSS FILES-->
+        <!-- Full-Width Carousel -->
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <!--INDICATORS FOR THE CAROUSEL-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                        </ol>
+                        <!--THE CAROUSEL-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video autoplay muted loop class="full-width-video">
+                                    <source src="./Media/HomepageMedia/vid1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="carousel-item">
+                                <video autoplay muted loop class="full-width-video">
+                                    <source src="./Media/HomepageMedia/vid2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4">Explore our products</h1>
+            </div>
+        </div>
+
+        <!--CATEGORY BAR-->
+        <div class="container text-center mt-4">
+            <div class="row justify-content-center">
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Phones-Androids.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category1.png" class="img-fluid rounded" alt="Honor">
+                        <p class="mt-2">Honor</p>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Phones-Apple.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category2.png" class="img-fluid rounded" alt="Apple">
+                        <p class="mt-2">Apple</p>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Phones-Androids.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category3.png" class="img-fluid rounded" alt="Samsung">
+                        <p class="mt-2">Samsung</p>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Appliances.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category4.png" class="img-fluid rounded" alt="Appliances">
+                        <p class="mt-2">Appliances</p>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Accessories.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category5.png" class="img-fluid rounded" alt="Phone Gadgets">
+                        <p class="mt-2">Phone Gadgets</p>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <a href="./Accessories.html" class="d-block category-item">
+                        <img src="./Media/HomepageMedia/category6.png" class="img-fluid rounded" alt="Phone Accessories">
+                        <p class="mt-2">Phone Accessories</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--BODY CONTENT NAME: EXPLORE OUR PRODUCTS-->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4">Enjoy these discounts!</h1>
+            </div>
+        </div>
+        <div class="container mt-4 explore">
+            <div class="row g-4 align-items-stretch inner-explore">
+                <!--PROD CARDS-->
+                <div class="col-md-8 p-3">
+                    <div class="product-card">
+                        <img src="./Media/HomepageMedia/imgcard1.png" alt="Main Product">
+                        <p><b>Up to 57% off with Trade-in + 50% off on bundled offers!</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="product-card">
+                        <img src="./Media/HomepageMedia/imgcard2.png" alt="Flip Phone">
+                        <p><b>Get up to ₱8,000 discount</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="product-card">
+                        <img src="./Media/HomepageMedia/imgcard3.png" alt="Phone">
+                        <p><b>Save up to ₱5,399 discount</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="product-card">
+                        <img src="./Media/HomepageMedia/imgcard4.png" alt="QLED TV">
+                        <p><b>Save up to ₱200 discount</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="product-card">
+                        <img src="./Media/HomepageMedia/imgcard5.png" alt="Air Conditioner">
+                        <p><b>Get 28% discount</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--BODY CONTENT NAME: CAROUSEL SHOWCASE-->
+        <div class="container mt-5">
+            <h3 class="textcolorer"><strong>Meet your new handy buddies</strong></h3>
+            <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel1.png" class="card-img-top" alt="Ihpone 13 clear phone case magsafe">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Apple iPhone 13 MagSafe Clear Case</h5>
+                                        <p class="text-muted"><s>₱3,000</s> <span class="textcolorer">₱2,499</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel2.png" class="card-img-top" alt="Premium Quality Phone Stand">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Premium Quality Phone Stand</h5>
+                                        <p class="text-muted"><s>₱220</s> <span class="textcolorer">₱120</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel3.png" class="card-img-top" alt="Realme 10000mAh Powerbank">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Realme 10000mAh Powerbank</h5>
+                                        <p class="text-muted"><s>₱1,200</s> <span class="textcolorer">₱888</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel4.png" class="card-img-top" alt="RedMi Bud 6">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">RedMi Bud 6</h5>
+                                        <p class="text-muted"><s>₱3,799</s> <span class="textcolorer">₱3,499</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel5.png" class="card-img-top" alt="Xiaomi Smart Kids Watch">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Xiaomi Smart Kids Watch</h5>
+                                        <p class="text-muted"><s>₱4,399</s> <span class="textcolorer">₱3,999</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel6.png" class="card-img-top" alt="Infinix XS01 Wireless Bluetooth Speaker">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Infinix XS01 Wireless Bluetooth Speaker</h5>
+                                        <p class="text-muted"><s>₱699</s> <span class="textcolorer">₱549</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!--BODY CONTENT NAME: SECOND CAROUSEL SHOWCASE-->
+        <div class="container mt-5">
+            <h3 class="textcolorer"><strong>Make your house into a smart one</strong></h3>
+            <div id="productCarousel2" class="carousel slide" data-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel7.png" class="card-img-top" alt="Samsung Galaxy Buds 2">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">TCL 43 Inch FHD Smart Android TV</h5>
+                                        <p class="text-muted"><s>₱20,995</s> <span class="textcolorer">₱16,495</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel8.png" class="card-img-top" alt="Anker PowerCore 20000mAh">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Haier Top Load Quick Wash HWM70-1269S5</h5>
+                                        <p class="text-muted"><s>₱10,200</s> <span class="textcolorer">₱9,998</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel9.png" class="card-img-top" alt="Logitech K380 Multi-Device Keyboard">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Tough Mama NTMAF4 4.0 Liters Air Fryer</h5>
+                                        <p class="text-muted"><s>₱3,999</s> <span class="textcolorer">₱3,499</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel10.png" class="card-img-top" alt="JBL Flip 6 Portable Speaker">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">FUJIDENZO FRIDGE RDD-35T 3.5CUFT</h5>
+                                        <p class="text-muted"><s>₱9,000</s> <span class="textcolorer">₱8,795</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel11.png" class="card-img-top" alt="Apple AirTag (4-Pack)">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Midea 20TMG4G082</h5>
+                                        <p class="text-muted"><s>₱12,598</s> <span class="textcolorer">₱10,998</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img src="./Media/HomepageMedia/itemCarousel12.png" class="card-img-top" alt="Sony WH-CH510 Wireless Headphones">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Hanabishi HAC650</h5>
+                                        <p class="text-muted"><s>₱7,549</s> <span class="textcolorer">₱6,445</span></p>
+                                        <a href="#" class="btn add-to-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#productCarousel2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#productCarousel2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!--ABOUT US-->
+        <div class="custom-container">
+            <div class="row custom-row align-items-center">
+                <!-- TEXT-->
+                <div class="col-md-6 text-section">
+                    <h2 class="title">JSL Story</h2>
+                    <p id="headingstatement"><strong>Top-quality tech with care for the future.</strong></p>
+                    <p>Smart, reliable, and built for a better tomorrow.</p>
+                    <a href="./About-us.html" class="buttonEngagement">Our Story</a>
+                </div>
+                <!--IMAGE-->
+                <div class="col-md-6 image-section">
+                    <img src="./Media/HomepageMedia/jsl-story.png" alt="Phone Display">
+                </div>
+            </div>
+        </div>
+        
+
+        <!--FOODTER-->
+        <!--DO NOT EDIT-->
+        <footer class="footer">
+            <div class="row footer-container">
+                <div class="col f-c1">
+                    <a class="navbar-brand" href="Homepage.html">
+                        <img src="./Media/NavBarMedia/Logo_Light.png" alt="Logo">
+                    </a>
+                    <nav class="footer-nav">
+                        <a href="Homepage.html">Home</a>
+                        <a href="Phones.html">Phones</a>
+                        <a href="Appliances.html">Appliances</a>
+                        <a href="Accessories.html">Accessories</a>
+                        <a href="About-us.html">About Us</a>
+                    </nav>
+                    <hr class="footer-divider">
+                    <p><strong>Company :</strong> JLS GADGETS AND ACCESSORIES </p>
+                    <p><strong>Main Store :</strong> SHAR APPLIANCES</p>
+                    <p><strong>CEO :</strong> JOSEPHINE SABAYO | <strong>TEL :</strong> 070-8864-0225</a> </p>
+                    <p><strong>Personal info manager :</strong> Arnulfo Sabayo III (JSLCO@gmail.com</a>) </p>
+                    <p>Copyright © JLS GADGETS AND ACCESSORIES. All rights reserved.</p>
+                </div>
+                <div class="col-md-auto">
+                    <br/>
+                        <h1>
+                        <b>CONTACT US</b>
+                    </h1>
+                    <ul>
+                        <li><p>JLS GADGETS AND ACCESSORIES</p></li>
+                        <li><strong>Landline:</strong> <b><u>070-8864-0225</u></b></li>
+                        <li><p><strong>Address:</strong> P2CQ+PM9, General Luis, Novaliches, Quezon City, Metro Manila, Philippines</p></li>
+                        <li><p><strong>Email:</strong> JSLCO@gmail.com</p></li>
+                        <li><p><strong>Developers:</strong> ARNULFO LUSANTA SABAYO III, RIEL ANDREW LEDESMA, ALJERRALD SANTOS, & GABRIEL AZE MEDINA </p></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2">
+                    <br/>
+                    <h1>
+                        <b>CONNECT</b>
+                    </h1>
+                    <ul>
+                        <li><a href="https://web.facebook.com/JSLCellphoneAccessories">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/jsl.ca/">Instagram</a></li>
+                        <li><a href="#">Lazada</a></li>
+                        <li><a href="#">Shopee</a></li>
+                    </ul>
+                </div>
+              </div>
+        </footer>
+        <script>
+            /*Script for NAVBAR transparent-solid*/
+            document.addEventListener("DOMContentLoaded", function () {
+                // if class exists and then gets navbar
+                if (document.body.classList.contains("homepage")) {
+                    const navbar = document.querySelector(".navbar");
+                    
+                    function updateNavbar() {
+                        if (window.scrollY > 50) {
+                            navbar.classList.add("solid");
+                            navbar.classList.remove("transparent");
+                        } else {
+                            navbar.classList.add("transparent");
+                            navbar.classList.remove("solid");
+                        }
+                    }
+                    //updates class as you scroll
+                    window.addEventListener("scroll", updateNavbar);
+                    updateNavbar();
+                }
+            });
+            /*Script for CART AND CONTACT PANEL*/
+            function togglePanel(panelId) {
+                document.getElementById(panelId).classList.toggle('active');
+            }
+
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Message sent successfully! We will get back to you soon.");
+                this.reset();
+            }); 
+        </script>        
+    </body>
+</html>
