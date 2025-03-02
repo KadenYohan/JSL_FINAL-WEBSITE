@@ -3,6 +3,7 @@
     color: #15623c;
     text-align: center;
 }
+
     /* Top Navbar */
 #top-navbar {
     background-color: #15623c;
@@ -10,45 +11,74 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 #top-navbar .navbar-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-    /*Image Icon Alignment to the Links below*/
+    /* aligns pics to the text*/
 #top-navbar .navbar-icon {
-    width: 100px;
+    max-width: 80px;
     height: auto;
-    margin: 30px;
+    margin: 15px;
 }
 
-#bottom-navbar .navbar-nav .nav-link.active {
-    color: #b2dfc9 !important;
-}
-
+    /* Bottom Navbar */
 #bottom-navbar {
     text-align: center;
-}
-
-#bottom-navbar .navbar-text-links {
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 50px;
-    color: #ebebeb;
-}
-
-#bottom-navbar .navbar-text-links:hover {
-    color: #b2dfc9;
+    width: 100%;
+    overflow: hidden;
 }
 
 #bottom-navbar .navbar-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap;
     width: 100%;
+    padding: 10px;
+}
+
+    /* Navbar links */
+#bottom-navbar .navbar-text-links {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #ebebeb;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+#bottom-navbar .navbar-text-links:hover {
+    color: #b2dfc9;
+}
+
+#bottom-navbar .navbar-nav .nav-link.active {
+    color: #b2dfc9 !important;
+}
+
+    /* For responsiveness*/
+@media screen and (max-width: 768px) {
+    #top-navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #top-navbar .navbar-icon {
+        max-width: 60px;
+        margin: 10px;
+    }
+
+    #bottom-navbar .navbar-text-links {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
 }
 
 
@@ -183,4 +213,19 @@ td[rowspan] {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+    /*For responsiveness*/
+@media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    td, th {
+      padding: 8px;
+      font-size: 14px;
+    }
 }

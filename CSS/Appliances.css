@@ -185,3 +185,18 @@ td[rowspan] {
     margin: 0 auto;
     max-width: 100%;
 }
+
+    /*For responsiveness*/
+@media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    td, th {
+      padding: 8px;
+      font-size: 14px;
+    }
+}
